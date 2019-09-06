@@ -1,7 +1,6 @@
 package task2;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class MamaRama{
     public static void main(String[] args) {
@@ -14,11 +13,10 @@ public class MamaRama{
             Integer val = mamaRama.get(c);
             if (val != null) {
                 mamaRama.put(c, new Integer(val + 1));
-            }
-            else {
+            } else {
                 mamaRama.put(c, 1);
             }
         }
-        mamaRama.forEach((k,v) -> System.out.println(k + " " + v));
+        mamaRama.forEach((k, v) -> System.out.println(k + " " + v));
     }
 }
